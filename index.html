@@ -11,38 +11,67 @@
   </head>
   <body>
     <header class="header">
-      <nav class="menu"></nav>
-      <a href="0#"></a>
-      <address></address>
+      <nav class="header__menu">
+        <ul class="header__link-list">
+          <li class="header__links-list-item_no-bullit">
+            <a class="header__link_active" href="#0">главная</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">посмотреть лоты</a>
+          </li>
+          <li class="header__links-list-item">
+            <a class="header__link" href="#0">об аукционе</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="header__logo">
+        <img
+          class="header__logo-image"
+          src="images\logo-black.svg"
+          alt="логотип"
+        />
+      </a>
+      <address class="address">
+        <a class="header__link" href="tel:+99995555555">+9 999 555 5555</a>
+        <a class="header__link" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="cover">
-        <h1></h1>
-        <div class="description">
-          <p></p>
-          <button class="button"></button>
+        <div class="overlay"></div>
+        <h1 class="cover__title">
+          <span class="aligned-text aligned-text_left">оно</span>
+          <span class="aligned-text aligned-text_center">тебе</span>
+          <span class="aligned-text aligned-text_right">надо</span>
+        </h1>
+        <div class="cover__description">
+          <p class="cover__description-text">
+            Аукцион вещей, в которые никто не верил
+          </p>
+            <button class="bet__button">сделать ставку</button>
         </div>
       </section>
       <section class="lots">
         <h2></h2>
         <ul>
           <li>
-            <a href="">
+            <a class="link__lots" href="">
               <article></article>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link__lots" href="">
               <article></article>
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="link__lots" href="">
               <article></article>
             </a>
           </li>
         </ul>
-        <a></a>
+        <a class="link"></a>
       </section>
       <section class="about">
         <div class="logo__white"></div>

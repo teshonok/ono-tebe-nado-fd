@@ -1,1 +1,157 @@
 /* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px 96px;
+}
+
+.header__link-list {
+    display: flex;
+    gap: 32px;
+    list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__link, .header__link_active {
+    text-underline-position: under;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    line-height: 24px;
+
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+.header__logo-image {
+    display: block;
+    min-width: 135px;
+    min-height: 110px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    align-items: flex-start;
+    max-width: 240px;
+    font-style: normal;
+}
+
+.cover {
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    min-width: 1100px;
+    min-height: 756px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    inset: 0;
+    z-index: -1;
+}
+
+.cover__title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 100px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.aligned-text {
+    display: block;
+}
+
+.aligned-text_left {
+    text-align: left;
+    padding-top: 165px;
+    padding-left: 50px;
+}
+
+.aligned-text_center {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.aligned-text_right {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.cover__description {
+    width: 1000px;
+    height: 51px;
+    top: 656px;
+    left: 50px;
+}
+
+.cover__description-text {
+    font-family: Raleway;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 119px;
+    padding-left: 52px;
+    word-spacing: 18px;
+}
+
+.bet__button {
+    position: relative;
+    left: 794px;
+    bottom: 40px;
+    min-width: 256px;
+    min-height: 51px;
+    border: solid white 1px;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    text-align: center
+}
+
+.lots {
+
+}
+
+.link__lots {
+
+}    
+
+.about {
+
+}
+
+.logo__white {
+
+}
+
+.text {
+
+}
+
+.footer {
+
+}
