@@ -1,4 +1,3 @@
-/* место для вашего кода */
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
@@ -17,7 +16,8 @@
 }
 
 .header__link, 
-.header__link_active {
+.header__link_active,
+.address__link {
     text-underline-position: under;
     font-weight: 400;
     font-size: 18px;
@@ -41,6 +41,8 @@
     align-items: flex-start;
     max-width: 240px;
     font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .cover {
@@ -64,7 +66,7 @@
 .cover__title {
     font-weight: 700;
     font-size: 100px;
-    line-height: 114.99999999999999%;
+    line-height: 115%;
     letter-spacing: 30px;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -75,50 +77,43 @@
 }
 
 .aligned-text_left {
-    display: block;
     text-align: start;
     padding-top: 165px;
     padding-left: 50px;
 }
 
 .aligned-text_center {
-    display: block;
     text-align: center;
     padding-top: 20px;
     padding-left: 30px;
 }
 
 .aligned-text_right {
-    display: block;
     text-align: right;
     padding-top: 20px;
     padding-right: 20px;
 }
 
 .cover__description {
-    width: 1000px;
-    height: 51px;
-    top: 656px;
-    left: 50px;
+    display: grid;
+    grid-template-columns: 700px 1fr;
 }
 
 .cover__description-text {
-    font-weight: 400;
-    font-style: Regular;
     font-size: 22px;
-    line-height: 28px;
-    letter-spacing: 0%;
+    line-height: 28px; /* в макете указано такое же значение, я проверила 0-0 */
     text-transform: uppercase;
     color: #FFFFFF;
-    padding-top: 119px;
+    padding-top: 117px;
     padding-left: 52px;
     word-spacing: 18px;
 }
 
 .bet__button {
-    position: relative;
-    left: 794px;
-    bottom: 40px;
+    justify-self: center;
+    align-self: end;
+    margin-left: 43px;
+    margin-bottom: -10px;
     min-width: 256px;
     min-height: 51px;
     border: solid white 1px;
@@ -132,14 +127,11 @@
 }
 
 .lots {
-    width: 1,052px;
-    min-height: 723px;
     margin-top: 180px;
 }
 
 .lots__heading {
     font-weight: 700;
-    font-style: Bold;
     font-size: 40px;
     text-transform: uppercase;
     padding-left: 65px;
@@ -156,6 +148,8 @@
     width: 334px;
     min-height: 596px;
     z-index: 0;
+    background-size: cover;
+    background-position: center;
 }
 
 .lots__card-list {
@@ -172,23 +166,16 @@
 
 .card_type_film {
     background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
 }
 .card_type_book {
     background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .card__link {
-    height: 100%;
     text-decoration: none;
 }    
 
@@ -196,8 +183,10 @@
     font-size: 22px;
     width: 254px;
     text-transform: uppercase;
-    text-decoration: underline solid white 1px;
-    text-underline-position: under;
+    text-decoration: underline;
+    text-underline-offset: 3px; 
+    text-decoration-thickness: 1px;
+    text-decoration-color: white;
     color: white;
 }
 
@@ -206,23 +195,23 @@
     font-size: 20px;
     line-height: 120%;
     color: white;
-    min-height: 144px;
     width: 254px;
     padding-bottom: 48px;
 }
 
 .lots__look-more-link {
-    display: block;
+    display: inline-block;
     font-size: 20px;
-    margin: 30px 65px;
+    margin: 8px 65px;
+    padding-top: 21px;
     text-decoration: underline solid 1px;
     text-underline-position: under;
 }
 
 .about {
     width: 1052px;
-    min-height: 595px;
-    margin-top: 154px;
+    padding-top: 149px;
+    padding-bottom: 35px;
 }
 
 .about__column {
@@ -260,9 +249,8 @@
     flex-direction: column;
     grid-column-start: 2;
     margin-left: 49px;
-    margin-top: 6px;
+    padding-top: 6px;
     width: 693px;
-    min-height: 312px;
     gap: 24px;
 }
 
@@ -275,25 +263,23 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 146px;
-    min-height: 180px;
     min-width: 1100px;
 }
 
 .address__footer {
     justify-self: start;
-    align-items: flex-start;
-     max-width: 2264px;
-    font-style: normal;
     padding-left: 50px;
+    max-width: 300px; /* когда убираю макс значение оно переносится не как в макете */
 }
 
 .footer__menu-list {
+    list-style: none;
     justify-content: center;
     font-size: 18px;
+    text-underline-offset: 4px; 
 }
 
 .footer__menu-list-item {
-    list-style: none;
     grid-column-start: 2;
     justify-self: center;
 }
